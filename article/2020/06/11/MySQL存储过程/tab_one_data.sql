@@ -1,39 +1,3 @@
-/*
- Navicat Premium Data Transfer
-
- Source Server         : MySql_LocalHost
- Source Server Type    : MySQL
- Source Server Version : 50723
- Source Host           : localhost:3306
- Source Schema         : tsingsu-test
-
- Target Server Type    : MySQL
- Target Server Version : 50723
- File Encoding         : 65001
-
- Date: 15/06/2020 17:31:01
-*/
-
-SET NAMES utf8mb4;
-SET FOREIGN_KEY_CHECKS = 0;
-
--- ----------------------------
--- Table structure for tab_one
--- ----------------------------
-DROP TABLE IF EXISTS `tab_one`;
-CREATE TABLE `tab_one`  (
-  `index_id` int(11) NOT NULL DEFAULT 1 AUTO_INCREMENT,
-  `name` varbinary(100) NULL DEFAULT NULL COMMENT '姓名',
-  `identity_card` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '身份证',
-  `unit` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '工作单位',
-  `phone` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '手机号码',
-  `state` int(11) NULL DEFAULT NULL COMMENT '状态：\r\n0：离职\r\n1：在职',
-  PRIMARY KEY (`index_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1261 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
-
--- ----------------------------
--- Records of tab_one
--- ----------------------------
 INSERT INTO `tab_one` VALUES (1016, 0x7465737420757365722032, '******1992******1*', 'unit 2', '*********2', 1);
 INSERT INTO `tab_one` VALUES (1017, 0x7465737420757365722033, '******1993******2*', 'unit 3', '*********3', 1);
 INSERT INTO `tab_one` VALUES (1018, 0x7465737420757365722034, '******1994******1*', 'unit 4', '*********4', 1);
